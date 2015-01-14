@@ -6,6 +6,18 @@
 
 Usage overview
 ===========
+In this example, we use a "Dummy" java Object (GenericDaoObj), a "Dummy" Database Table (GenericDaoTable), 
+
+Database Table DDL
+===========
+```sql
+CREATE TABLE GenericDaoTable (
+  ID       int(10) NOT NULL AUTO_INCREMENT, 
+  aString  varchar(100) NOT NULL UNIQUE, 
+  aDate    date NOT NULL,
+  aInt 	   int(10) NOT NULL,
+  PRIMARY KEY (ID));
+```
 
 Hibernate Mapping
 ===========
@@ -66,7 +78,7 @@ CRUD Operations
   
 ```
 
-Using Search features
+Search features
 ===========
 The GET operation uses the features provided by [Google Generic Search](https://code.google.com/p/hibernate-generic-dao/wiki/Search) to offer a powerful and flexible search functionalities.
 
@@ -122,6 +134,21 @@ public void testLike() {
     LOG.debug("testDisjunction - Found [{}] of [{}] records with with ID = [{} OR {} OR {}], values [{}].", new Object[] {nbrRecords, total, id_1, id_2, id_3, page.getList()});
   }
   
- 
+public void testBetween(Date beginDate, Date endDate) {
+
+    Search search = new Search();
+    search.addFilterAnd(Filter.greaterOrEqual("aDate", beginDate), Filter.lessThan("aDate", endDate));
+
+    GenericSearch betweenSearch = new GenericSearch(search);
+	
+    PagingList<GenericDaoObj> page = dao.get(betweenSearch);
+
+    int total = page.getTotalRecords();
+    int nbrRecords = page.getList().size();
+
+    LOG.debug("testBetween - Found [{}] of [{}] records with dates [{} <= DATE < {}], values [{}].", new Object[] {nbrRecords, total, beginDate, endDate, page.getList()});
+  }  
+  
+
 ```
 
