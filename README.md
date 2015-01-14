@@ -8,7 +8,9 @@ Database Generic AO
 
 Usage overview
 ===========
+
 Hibernate Mapping
+===========
 ```xml
 <hibernate-mapping>
     <class name="com.github.vsspt.common.db.impl.hibernate.tests.GenericDaoObj" table="GenericDaoTable">
@@ -31,6 +33,7 @@ Hibernate Mapping
 ```
 
 Java Model
+===========
 ```java
 public class GenericDaoObj{
 
@@ -44,6 +47,7 @@ public class GenericDaoObj{
 ```
 
 CRUD Operations
+===========
 ```java
   IGenericDAO<GenericDaoObj, Long> dao = new GenericDAO<>(GenericDaoObj.class);
   
@@ -63,3 +67,26 @@ CRUD Operations
   }   
   
 ```
+
+Using Search features
+===========
+The GET operation uses the features provided by [Google Generic Search](https://code.google.com/p/hibernate-generic-dao/wiki/Search) to offer a powerful and flexible search functionalities.
+
+===========
+```java
+public void searchOr(Long id1, Long id2){
+
+	Search search = new Search();
+    search.addFilterOr(Filter.equal("ID", id), Filter.equal("ID", id2));
+	
+	GenericSearch orSearch = new GenericSearch(search);
+
+    PagingList<GenericDaoObj> page = dao.get(orSearch);
+
+    int total = page.getTotalRecords();
+    int nbrRecords = page.getList().size();
+
+    LOG.debug("testOr - Found [{}] of [{}] records with ID = [{} OR {}], values [{}].", new Object[] {nbrRecords, total, id, id2, page.getList()});
+}
+```
+
