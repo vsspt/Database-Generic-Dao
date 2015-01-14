@@ -6,7 +6,7 @@
 
 Usage overview
 ===========
-In this example, we use a "Dummy" java Object (GenericDaoObj), a "Dummy" Database Table (GenericDaoTable), 
+The following example shows how to perform CRUD and Search operations in a Dummy Database table.
 
 Database Table DDL
 ===========
