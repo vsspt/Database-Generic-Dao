@@ -47,9 +47,9 @@
       </repository>
    </distributionManagement>
    <scm>
-      <connection>scm:git:https://github.com/vsspt/db-generic-dao.git</connection>
-      <url>scm:git:https://github.com/vsspt/db-generic-dao.git</url>
-      <developerConnection>scm:git:https://github.com/vsspt/db-generic-dao.git</developerConnection>
+      <connection>scm:git:https://github.com/vsspt/Database-Generic-Dao.git</connection>
+      <url>scm:git:https://github.com/vsspt/Database-Generic-Dao.git</url>
+      <developerConnection>scm:git:https://github.com/vsspt/Database-Generic-Dao.git</developerConnection>
    </scm>
    <developers>
       <developer>
@@ -95,8 +95,8 @@
       </dependencies>
    </dependencyManagement>
    <modules>
-      <module>db-generic-dao-api</module>
-      <module>db-generic-dao-spring-hibernate</module>
+      <module>Database-Generic-Dao-api</module>
+      <module>Database-Generic-Dao-spring-hibernate</module>
    </modules>
    <build>
       <plugins>
