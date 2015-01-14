@@ -1,5 +1,4 @@
-# Database-Generic-Dao
-Database Generic AO
+# Database-Generic-DAO
 ===========
 
  - The purpose of this framework is ease the coding DAO layer objects. Includes all of the basic CRUD methods as well as various "find" or "search" methods.
