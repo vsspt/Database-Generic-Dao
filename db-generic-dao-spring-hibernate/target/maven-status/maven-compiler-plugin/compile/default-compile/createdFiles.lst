@@ -1,0 +1,3 @@
+com\github\vsspt\common\db\impl\hibernate\GenericDAO.class
+com\github\vsspt\common\db\impl\hibernate\util\FilterToCriteria.class
+com\github\vsspt\common\db\impl\hibernate\util\SearchProcessor.class

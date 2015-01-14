@@ -3,7 +3,7 @@
    <modelVersion>4.0.0</modelVersion>
    <groupId>com.github.vsspt</groupId>
    <artifactId>db-generic-dao</artifactId>
-   <version>1.0</version>
+   <version>1.0.0</version>
    <name>Database Generic DAO</name>
    <packaging>pom</packaging>
    <url>https://github.com/vsspt/db-generic-dao</url>
@@ -95,8 +95,8 @@
       </dependencies>
    </dependencyManagement>
    <modules>
-      <module>Database-Generic-Dao-api</module>
-      <module>Database-Generic-Dao-spring-hibernate</module>
+      <module>db-generic-dao-api</module>
+      <module>db-generic-dao-spring-hibernate</module>
    </modules>
    <build>
       <plugins>
