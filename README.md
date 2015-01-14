@@ -72,14 +72,13 @@ Using Search features
 ===========
 The GET operation uses the features provided by [Google Generic Search](https://code.google.com/p/hibernate-generic-dao/wiki/Search) to offer a powerful and flexible search functionalities.
 
-===========
 ```java
 public void searchOr(Long id1, Long id2){
 
-	Search search = new Search();
+    Search search = new Search();
     search.addFilterOr(Filter.equal("ID", id), Filter.equal("ID", id2));
 	
-	GenericSearch orSearch = new GenericSearch(search);
+    GenericSearch orSearch = new GenericSearch(search);
 
     PagingList<GenericDaoObj> page = dao.get(orSearch);
 
@@ -88,5 +87,43 @@ public void searchOr(Long id1, Long id2){
 
     LOG.debug("testOr - Found [{}] of [{}] records with ID = [{} OR {}], values [{}].", new Object[] {nbrRecords, total, id, id2, page.getList()});
 }
+
+public void testLike() {
+    String like_value = "LIKE_VALUE";
+    String property = "aString";
+    Search search = new Search();
+
+    search.addFilterLike(property, like_value);
+	
+    GenericSearch likeSearch = new GenericSearch(search);
+
+    PagingList<GenericDaoObj> page = dao.get(likeSearch);
+
+    int total = page.getTotalRecords();
+    int nbrRecords = page.getList().size();
+
+    LOG.debug("testLike - Found [{}] of [{}] records [{} LIKE '{}%'], values [{}].", new Object[] {nbrRecords, total, property, like_value, page.getList()});
+  }
+  
+ public void testDisjunction(Long id_1, Long id_2, Long id_3) {
+	
+    Search search = new Search();
+    search.setDisjunction(Boolean.TRUE);
+
+    search.addFilter(Filter.equal("ID", id_1));
+    search.addFilter(Filter.equal("ID", id_2));
+    search.addFilter(Filter.equal("ID", id_3));
+	
+    GenericSearch disjunctionSearch = new GenericSearch(search);
+
+    PagingList<GenericDaoObj> page = dao.get(disjunctionSearch);
+
+    int total = page.getTotalRecords();
+    int nbrRecords = page.getList().size();
+
+    LOG.debug("testDisjunction - Found [{}] of [{}] records with with ID = [{} OR {} OR {}], values [{}].", new Object[] {nbrRecords, total, id_1, id_2, id_3, page.getList()});
+  }
+  
+ 
 ```
 
