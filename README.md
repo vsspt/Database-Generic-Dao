@@ -152,3 +152,22 @@ public void testBetween(Date beginDate, Date endDate) {
 
 ```
 
+Maven Dependencies - API
+===========
+```xml
+<dependency>
+  <groupId>com.github.vsspt</groupId>
+  <artifactId>db-generic-dao-api</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+
+Maven Dependencies - Spring Hibernate Implementation
+===========
+```xml
+<dependency>
+  <groupId>com.github.vsspt</groupId>
+  <artifactId>db-generic-dao-spring-hibernate</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
