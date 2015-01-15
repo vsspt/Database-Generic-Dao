@@ -4,7 +4,7 @@
    <parent>
 	 <groupId>com.github.vsspt</groupId>  
 	 <artifactId>db-generic-dao</artifactId>
-     <version>1.0.1-SNAPSHOT</version>
+     <version>1.0.0-SNAPSHOT</version>
 	<relativePath>../pom.xml</relativePath>	 
    </parent>
    <artifactId>db-generic-dao-spring-hibernate</artifactId>
