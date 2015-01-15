@@ -4,10 +4,10 @@
   <parent>
 	<groupId>com.github.vsspt</groupId>  
 	<artifactId>db-generic-dao</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>db-generic-dao-api</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <name>Database Generic DAO API</name>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
