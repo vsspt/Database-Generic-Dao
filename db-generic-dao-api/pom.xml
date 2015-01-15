@@ -4,7 +4,7 @@
   <parent>
 	<groupId>com.github.vsspt</groupId>  
 	<artifactId>db-generic-dao</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
   </parent>
   <artifactId>db-generic-dao-api</artifactId>
   <name>Database Generic DAO API</name>
@@ -33,4 +33,8 @@
          </plugin>	
 	</plugins>
   </build>
+
+  <scm>
+    <tag>db-generic-dao-api-1.0.0</tag>
+  </scm>
 </project>
