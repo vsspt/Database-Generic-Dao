@@ -33,4 +33,8 @@
          </plugin>	
 	</plugins>
   </build>
+
+  <scm>
+    <tag>db-generic-dao</tag>
+  </scm>
 </project>

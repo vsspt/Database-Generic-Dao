@@ -127,4 +127,8 @@
         <scope>test</scope>		
 	  </dependency>	 
    </dependencies>
+
+  <scm>
+    <tag>db-generic-dao</tag>
+  </scm>
 </project>
