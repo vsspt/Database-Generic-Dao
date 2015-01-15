@@ -8,6 +8,7 @@
 	<relativePath>../pom.xml</relativePath>
   </parent>
   <artifactId>db-generic-dao-api</artifactId>
+  <version>1.0.0</version>  
   <name>Database Generic DAO API</name>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

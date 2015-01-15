@@ -8,6 +8,7 @@
 	<relativePath>../pom.xml</relativePath>	 
    </parent>
    <artifactId>db-generic-dao-spring-hibernate</artifactId>
+   <version>1.0.0</version>     
    <name>Database Generic DAO Spring Hibernate Implementation</name>
    <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
