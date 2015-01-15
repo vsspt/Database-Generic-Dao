@@ -4,7 +4,8 @@
   <parent>
 	<groupId>com.github.vsspt</groupId>  
 	<artifactId>db-generic-dao</artifactId>
-    <version>1.0.0</version>
+   <version>1.0.0-SNAPSHOT</version>
+	<relativePath>../pom.xml</relativePath>
   </parent>
   <artifactId>db-generic-dao-api</artifactId>
   <name>Database Generic DAO API</name>
@@ -19,22 +20,5 @@
   </dependencies>  
   <build>
     <finalName>${project.artifactId}-${project.parent.version}</finalName>
-	<plugins>
-		<plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-release-plugin</artifactId>
-            <version>${maven-release-plugin.version}</version>
-            <configuration>
-               <autoVersionSubmodules>true</autoVersionSubmodules>
-               <useReleaseProfile>false</useReleaseProfile>
-               <releaseProfiles>release</releaseProfiles>
-               <goals>deploy</goals>
-            </configuration>
-         </plugin>	
-	</plugins>
   </build>
-
-  <scm>
-    <tag>db-generic-dao-api-1.0.0</tag>
-  </scm>
 </project>
