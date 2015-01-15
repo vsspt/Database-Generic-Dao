@@ -1,7 +1,7 @@
 # Database-Generic-DAO
 
- - The purpose of this framework is to ease the coding DAO layer objects. Includes all of the basic CRUD methods as well as various "find" or "search" methods.
- - Uses [Google Generic Search](https://code.google.com/p/hibernate-generic-dao/wiki/Search) that offers a powerful and flexible search functionality.
+ - The purpose of this framework is to ease the coding of DAO layer objects. Includes all of the basic CRUD methods as well as various "find" or "search" methods.
+ - Uses [Google Generic Search](https://code.google.com/p/hibernate-generic-dao/wiki/Search) to provide a powerful and flexible search functionality.
  - Implemented using Spring and Hibernate
 
 Usage overview
