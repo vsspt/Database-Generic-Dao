@@ -4,14 +4,14 @@
    <parent>
 	 <groupId>com.github.vsspt</groupId>  
 	 <artifactId>db-generic-dao</artifactId>
-     <version>1.0.0</version>
+     <version>1.0.0-SNAPSHOT</version>
    </parent>
    <artifactId>db-generic-dao-spring-hibernate</artifactId>
-   <version>1.0.0</version>
+   <version>1.0.0-SNAPSHOT</version>
    <name>Database Generic DAO Spring Hibernate Implementation</name>
    <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	  <db-generic-dao-api.version>1.0.0</db-generic-dao-api.version>
+	  <db-generic-dao-api.version>1.0.0-SNAPSHOT</db-generic-dao-api.version>
    </properties>
    <build>
       <finalName>${project.artifactId}-${project.parent.version}</finalName>

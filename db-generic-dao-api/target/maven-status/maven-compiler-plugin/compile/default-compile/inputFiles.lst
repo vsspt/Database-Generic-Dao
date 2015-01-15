@@ -1,9 +1,0 @@
-F:\GitHubGenericDAO\Database-Generic-Dao\db-generic-dao-api\src\main\java\com\github\vsspt\common\db\dao\api\IGenericDAO.java
-F:\GitHubGenericDAO\Database-Generic-Dao\db-generic-dao-api\src\main\java\com\github\vsspt\common\db\dao\api\search\GenericSearch.java
-F:\GitHubGenericDAO\Database-Generic-Dao\db-generic-dao-api\src\main\java\com\github\vsspt\common\db\dao\api\util\PagingList.java
-F:\GitHubGenericDAO\Database-Generic-Dao\db-generic-dao-api\src\main\java\com\github\vsspt\common\db\dao\api\annotation\Auditable.java
-F:\GitHubGenericDAO\Database-Generic-Dao\db-generic-dao-api\src\main\java\com\github\vsspt\common\db\dao\api\search\GenericFilterDef.java
-F:\GitHubGenericDAO\Database-Generic-Dao\db-generic-dao-api\src\main\java\com\github\vsspt\common\db\dao\api\search\GenericAlias.java
-F:\GitHubGenericDAO\Database-Generic-Dao\db-generic-dao-api\src\main\java\com\github\vsspt\common\db\dao\api\util\Parameter.java
-F:\GitHubGenericDAO\Database-Generic-Dao\db-generic-dao-api\src\main\java\com\github\vsspt\common\db\dao\api\search\GenericFilterParam.java
-F:\GitHubGenericDAO\Database-Generic-Dao\db-generic-dao-api\src\main\java\com\github\vsspt\common\db\dao\api\constants\Message.java

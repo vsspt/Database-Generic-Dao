@@ -1,9 +1,0 @@
-com\github\vsspt\common\db\dao\api\search\GenericAlias.class
-com\github\vsspt\common\db\dao\api\constants\Message.class
-com\github\vsspt\common\db\dao\api\search\GenericFilterParam.class
-com\github\vsspt\common\db\dao\api\annotation\Auditable.class
-com\github\vsspt\common\db\dao\api\util\Parameter.class
-com\github\vsspt\common\db\dao\api\search\GenericFilterDef.class
-com\github\vsspt\common\db\dao\api\util\PagingList.class
-com\github\vsspt\common\db\dao\api\IGenericDAO.class
-com\github\vsspt\common\db\dao\api\search\GenericSearch.class
