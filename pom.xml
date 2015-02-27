@@ -3,7 +3,7 @@
    <modelVersion>4.0.0</modelVersion>
    <groupId>com.github.vsspt</groupId>
    <artifactId>db-generic-dao</artifactId>
-   <version>1.0.0</version>
+   <version>1.0.0-SNAPSHOT</version>
    <name>Database Generic DAO</name>
    <description>A Generic DAO to perform CRUD and Search operations.</description>
    <packaging>pom</packaging>
